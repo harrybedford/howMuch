@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>HowMuch?</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Currency Converter</h1>
+  <ion-item>
+    <ion-label>From</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-select [(ngModel)]="currencyFrom" cancelText="Cancel" okText="Set">
+      <ion-option value="aud">Australian Dollar</ion-option>
+      <ion-option value="bgn">Bulgarian Lev</ion-option>
+      <ion-option value="brl">Brazilian Real</ion-option>
+      <ion-option value="cad">Canadian Dollar</ion-option>
+      <ion-option value="chf">Swiss Franc</ion-option>
+      <ion-option value="cny">Chinese Yuan</ion-option>
+      <ion-option value="czk">Czech Koruna</ion-option>
+      <ion-option value="dkk">Danish Krone</ion-option>
+      <ion-option value="gbp">British Pound</ion-option>
+      <ion-option value="hkd">Hong Kong Dollar</ion-option>
+      <ion-option value="hrk">Croatian Kuna</ion-option>
+      <ion-option value="huf">Hungarian Forint</ion-option>
+      <ion-option value="idr">Indonesian Rupiah</ion-option>
+      <ion-option value="ils">Israeli Shekel</ion-option>
+      <ion-option value="inr">Indian Rupee</ion-option>
+      <ion-option value="jpy">Japanese Yen</ion-option>
+      <ion-option value="krw">South Korean Won</ion-option>
+      <ion-option value="mxn">Mexican Peso</ion-option>
+      <ion-option value="myr">Malaysian Ringgit</ion-option>
+      <ion-option value="nok">Norwegian Krone</ion-option>
+      <ion-option value="nzd">New Zealand Dollar</ion-option>
+      <ion-option value="php">Philippine Peso</ion-option>
+      <ion-option value="pln">Polish Zloty</ion-option>
+      <ion-option value="ron">Romanian Leu</ion-option>
+      <ion-option value="rub">Russian Ruble</ion-option>
+      <ion-option value="sek">Swedish Krona</ion-option>
+      <ion-option value="sgd">Singapore Dollar</ion-option>
+      <ion-option value="thb">Thai Baht</ion-option>
+      <ion-option value="try">Turkish Lira</ion-option>
+      <ion-option value="usd">US Dollar</ion-option>
+      <ion-option value="zar">South African Rand</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Amount</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-input type="number" placeholder="Amount"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>To</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-select [(ngModel)]="currencyTo" cancelText="Cancel" okText="Set">
+      <ion-option value="aud">Australian Dollar</ion-option>
+      <ion-option value="bgn">Bulgarian Lev</ion-option>
+      <ion-option value="brl">Brazilian Real</ion-option>
+      <ion-option value="cad">Canadian Dollar</ion-option>
+      <ion-option value="chf">Swiss Franc</ion-option>
+      <ion-option value="cny">Chinese Yuan</ion-option>
+      <ion-option value="czk">Czech Koruna</ion-option>
+      <ion-option value="dkk">Danish Krone</ion-option>
+      <ion-option value="gbp">British Pound</ion-option>
+      <ion-option value="hkd">Hong Kong Dollar</ion-option>
+      <ion-option value="hrk">Croatian Kuna</ion-option>
+      <ion-option value="huf">Hungarian Forint</ion-option>
+      <ion-option value="idr">Indonesian Rupiah</ion-option>
+      <ion-option value="ils">Israeli Shekel</ion-option>
+      <ion-option value="inr">Indian Rupee</ion-option>
+      <ion-option value="jpy">Japanese Yen</ion-option>
+      <ion-option value="krw">South Korean Won</ion-option>
+      <ion-option value="mxn">Mexican Peso</ion-option>
+      <ion-option value="myr">Malaysian Ringgit</ion-option>
+      <ion-option value="nok">Norwegian Krone</ion-option>
+      <ion-option value="nzd">New Zealand Dollar</ion-option>
+      <ion-option value="php">Philippine Peso</ion-option>
+      <ion-option value="pln">Polish Zloty</ion-option>
+      <ion-option value="ron">Romanian Leu</ion-option>
+      <ion-option value="rub">Russian Ruble</ion-option>
+      <ion-option value="sek">Swedish Krona</ion-option>
+      <ion-option value="sgd">Singapore Dollar</ion-option>
+      <ion-option value="thb">Thai Baht</ion-option>
+      <ion-option value="try">Turkish Lira</ion-option>
+      <ion-option value="usd">US Dollar</ion-option>
+      <ion-option value="zar">South African Rand</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <button ion-button full>Calculate</button>
+
+  <ion-card>
+
+    <ion-card-content>
+      £188.65
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
